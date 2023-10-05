@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--                          Hernández González, Facundo ---- Grupo 267                             -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NavBar!</a>
+            <button id="collapseButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex mt-3 mt-lg-auto order-lg-1" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-lg-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-5" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-5" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <!-- d-lg-none hace "Opciones" que no se muestre en pantallas mayores a 992px -->
+                        <a class="nav-link" id="opciones" href="#">Opciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="topText position-relative text-center d-none d-lg-block">
+            <h2>Lorem Carrusel</h2>
+            <div class="carousel slide d-inline-block " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <p>Texto carousel 1</p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <p>Texto carousel 2</p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <p>Texto carousel 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-12 col-md-12 col-lg-3">
+                <div class="list-group d-none d-lg-block mb-3" id="listGroup">
+                    <!-- la clase d-none está afectada en el archivo script.js con toggle para que el div aparezca al hacer click en Opciones -->
+                    <a href="#" class="list-group-item list-group-item-action">Opción 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 4</a>
+                </div>
+            </div>
+            <div class="col col-12 col-lg-9">
+                <div class="row mx-2">
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed
+                            adipiscing diam donec adipiscing tristique risus.
+                        </p>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Sit amet tellus cras adipiscing enim eu turpis egestas pretium.
+                            Purus semper eget duis at tellus. Enim ut tellus elementum sagittis
+                            vitae. Convallis convallis tellus id interdum velit laoreet.
+                        </p>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Egestas sed sed risus pretium quam vulputate dignissim. Suspendisse
+                            faucibus interdum posuere lorem ipsum dolor sit amet. Purus sit
+                            amet volutpat consequat. Est lorem ipsum dolor sit.
+                        </p>
+                    </div>
+
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Tincidunt nunc pulvinar sapien et. At in tellus integer feugiat scelerisque.
+                            Diam phasellus vestibulum lorem sed risus. Pharetra massa massa ultricies
+                            mi quis hendrerit.
+                        </p>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris.
+                            Quis blandit turpis cursus in. Purus sit amet luctus venenatis lectus
+                            magna fringilla urna porttitor.
+                        </p>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Ornare lectus sit amet est. Tincidunt praesent semper feugiat nibh.
+                            Eget nunc lobortis mattis aliquam faucibus. Pellentesque massa placerat
+                            duis ultricies. Enim ut tellus elementum sagittis vitae et leo duis ut.
+                            Sed tempus urna et pharetra.
+                        </p>
+                    </div>
+
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Eget sit amet tellus cras adipiscing enim. Posuere lorem ipsum dolor
+                            sit amet consectetur adipiscing elit duis. Nec nam aliquam sem et
+                            tortor consequat id. Ac felis donec et odio pellentesque.
+                        </p>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 parrafos">
+                        <p>
+                            Scelerisque purus semper eget duis at tellus. In egestas erat imperdiet
+                            sed. Lectus magna fringilla urna porttitor rhoncus. Lobortis
+                            scelerisque fermentum dui faucibus in ornare quam viverra.
+                        </p>
+                    </div>
+                    <div class="col col-12 col-md-6 col-lg-4 mb-3 py-2 d-none d-lg-block parrafos">
+                        <p class="d-none">
+                            Varius morbi enim nunc faucibus. Et egestas quis ipsum suspendisse
+                            ultrices gravida dictum. Elementum pulvinar etiam non quam lacus
+                            suspendisse faucibus interdum posuere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
